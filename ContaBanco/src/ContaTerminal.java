@@ -9,7 +9,6 @@ public class ContaTerminal {
         String nomeCliente;
         double saldo;
 
-
         System.out.println("Por favor, digite o número da Conta!");
         numero = scanner.nextInt();
         scanner.nextLine();
