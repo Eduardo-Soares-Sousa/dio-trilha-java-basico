@@ -27,6 +27,7 @@ public class Contador {
         terminal.nextLine();
 
         try{
+            
             contar(parametroUm, parametroDois);
         }catch(ParametrosInvalidosException exception){
             System.out.println(exception.getMessage());
