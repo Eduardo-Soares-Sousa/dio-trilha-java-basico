@@ -14,6 +14,12 @@ public class Main {
         float adicional = scanner.nextFloat();
         scanner.nextLine();
 
+        float salarioTransferido = (valorBruto - calcularImposto(valorBruto)) + adicional;
+        
+        System.out.println("O valor do salário a ser transferido para este funcionario é de R$:" + String.format("%.2f", salarioTransferido));
+    }
+    
+    public static float calcularImposto(float valorBruto){
         float imposto = 0;
         if(valorBruto >= 0 && valorBruto <= 1100.0){
             imposto = 0.05f * valorBruto; 
@@ -23,8 +29,6 @@ public class Main {
             imposto = 0.15f * valorBruto;
         }
 
-        float salarioTransferido = (valorBruto - imposto) + adicional;
-
-        System.out.println("O valor do salário a ser transferido para este funcionario é de R$:" + String.format("%.2f", salarioTransferido));
+        return imposto;
     }
 }
