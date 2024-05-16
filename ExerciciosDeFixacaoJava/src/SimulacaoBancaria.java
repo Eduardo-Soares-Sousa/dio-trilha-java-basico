@@ -5,8 +5,8 @@ public class SimulacaoBancaria {
         Scanner scanner = new Scanner(System.in);
 
         double saldo = 0;
+        
         boolean sair = false;
-
         while(sair != true){
             int opcao = scanner.nextInt();
             scanner.nextLine();
